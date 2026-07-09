@@ -15,10 +15,10 @@
             /* الألوان الرجولية الفخمة: ذهبي عتيق وكحلي داكن */
             --gold: #c5a059;
             --dark-gold: #8c733f;
-            --bg-main: #0b1120; /* أزرق كحلي شديد الدكانة (خلفية الشاشة) */
-            --bg-card: #131c31; /* كحلي فاتح قليلاً (خلفية البطاقة) */
-            --text-main: #f8fafc; /* أبيض ساطع للنصوص الأساسية */
-            --text-muted: #cbd5e1; /* رمادي فاتح للتفاصيل */
+            --bg-main: #0b1120; 
+            --bg-card: #131c31; 
+            --text-main: #f8fafc; 
+            --text-muted: #cbd5e1; 
             --border-color: rgba(197, 160, 89, 0.25);
         }
 
@@ -51,7 +51,7 @@
             position: relative;
             width: 320px;
             height: 200px;
-            background: #1e293b; /* بطانة الظرف الداخلية */
+            background: #1e293b; 
             box-shadow: 0 20px 40px rgba(0,0,0,0.8);
             cursor: pointer;
             border-radius: 4px;
@@ -92,7 +92,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #111; /* لون الحرف داكن ليتناقض مع الذهب */
+            color: #111; 
             font-size: 2.2em;
             border: 2px solid #111;
             z-index: 4;
@@ -122,7 +122,6 @@
             max-width: 430px;
             margin: 0 auto;
             background-color: var(--bg-card);
-            /* نمط هندسي دقيق للخلفية */
             background-image: linear-gradient(var(--border-color) 1px, transparent 1px),
             linear-gradient(90deg, var(--border-color) 1px, transparent 1px);
             background-size: 40px 40px;
@@ -133,7 +132,7 @@
             padding-bottom: 60px;
         }
 
-        /* إطار خطي كلاسيكي للرجال */
+        /* إطار خطي كلاسيكي */
         .inner-border {
             position: absolute;
             top: 20px; bottom: 20px;
@@ -188,7 +187,7 @@
             font-size: 4.5em;
             margin: 0;
             line-height: 1.2;
-            text-shadow: 2px 2px 0px rgba(197, 160, 89, 0.4); /* ظل ذهبي حاد للاسم */
+            text-shadow: 2px 2px 0px rgba(197, 160, 89, 0.4); 
             font-weight: 700;
         }
 
@@ -200,7 +199,7 @@
             font-weight: 600;
         }
 
-        /* فاصل هندسي حاد (بدل الزخارف الوردية) */
+        /* فاصل هندسي حاد */
         .sharp-divider {
             width: 150px;
             height: 2px;
@@ -225,7 +224,7 @@
             font-size: 1.5em;
             line-height: 2;
             color: var(--text-main);
-            background: rgba(255,255,255,0.03); /* لون زجاجي داكن */
+            background: rgba(255,255,255,0.03); 
             padding: 30px 20px;
             border-radius: 8px;
             border-top: 2px solid var(--border-color);
@@ -233,50 +232,13 @@
             font-weight: 400;
         }
 
-        /* تفاصيل المأدبة */
-        .details-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            width: 100%;
-            margin-top: 20px;
-        }
-
-        .detail-item {
-            background: rgba(0,0,0,0.2);
-            padding: 25px 15px;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-            transition: border-color 0.3s ease;
-        }
-        .detail-item:hover { border-color: var(--gold); }
-        
-        .detail-item i {
-            font-size: 2em;
-            color: var(--gold);
-            margin-bottom: 15px;
-        }
-        .detail-item h3 {
-            font-family: 'El Messiri', sans-serif;
-            margin: 0 0 5px 0;
-            font-size: 1.2em;
-            color: var(--text-muted);
-        }
-        .detail-item p {
-            font-family: 'El Messiri', sans-serif;
-            margin: 0;
-            font-weight: bold;
-            font-size: 1.3em;
-            color: var(--text-main);
-        }
-
-        /* الزر الداكن الرسمي */
+        /* الزر الداكن الرسمي (تم تعديل الهوامش ليتناسب مع الحذف) */
         .btn-outline {
             font-family: 'El Messiri', sans-serif;
             background: rgba(197, 160, 89, 0.1);
             color: var(--gold);
             border: 1px solid var(--gold);
-            margin-top: 40px;
+            margin-top: 20px;
             text-decoration: none;
             display: block;
             padding: 18px;
@@ -338,23 +300,9 @@
             </div>
         </div>
 
-        <!-- القسم الثالث: التفاصيل والموقع -->
-        <div class="content-section" style="padding-bottom: 50px;">
+        <!-- القسم الثالث: الموقع فقط -->
+        <div class="content-section" style="padding-bottom: 70px; padding-top: 0;">
             <div class="reveal" style="width: 100%;">
-                <h2 style="color: var(--gold); font-family: 'El Messiri', sans-serif; font-size: 2em; margin-bottom: 15px;">تفاصيل المناسبة</h2>
-                <div class="details-grid">
-                    <div class="detail-item">
-                        <i class="fa-solid fa-utensils"></i>
-                        <h3>مأدبة العشاء</h3>
-                        <p>20:00</p>
-                    </div>
-                    <div class="detail-item">
-                        <i class="fa-regular fa-calendar-check"></i>
-                        <h3>التاريخ</h3>
-                        <p>السبت 25 جويلية</p>
-                    </div>
-                </div>
-
                 <!-- زر الخرائط -->
                 <a href="https://www.google.com/maps/search/?api=1&query=قاعة+الحفلات+المرجان+براقي" target="_blank" class="btn-outline">
                     <i class="fa-solid fa-location-dot"></i> موقع قاعة المرجان ببراقي
